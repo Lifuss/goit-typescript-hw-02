@@ -8,6 +8,4 @@ let notInitialize: undefined;
 let callback = (a: number): number => {
   return 100 + a;
 };
-// не знаю що приходить в а, але напровсяк нехай буде колбек калькуляції
-
 export {};
