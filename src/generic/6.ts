@@ -13,16 +13,16 @@ type User = {
   email: string;
   password: string;
 };
+const OldUserData: User = {
+  name: "Volodymyr",
+  surname: "Rybak",
+  email: "rybak@gmail.com",
+  password: "strong!pass",
+};
 
 function createOrUpdateUser(initialValues: Partial<User>): User {
   // Оновлення користувача
-  const defaultUser: User = {
-    name: "",
-    surname: "",
-    email: "",
-    password: "",
-  };
-  return { ...defaultUser, ...initialValues };
+  return { ...OldUserData, ...initialValues };
 }
 
 createOrUpdateUser({ email: "user@mail.com", password: "password123" });
